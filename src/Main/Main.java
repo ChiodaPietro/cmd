@@ -5,30 +5,67 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("starting path");
-        Explorer explorer=new Explorer(reader.readLine());
-        while(true){
+    static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    static Explorer explorer;
 
-            String[] array=reader.readLine().split(" ");
-            switch (array[0]){
-                case "cd", "chdir":
-                    explorer.cd(array[1].replace(" ", ""));
-                    break;
-                case"dir":
-                    explorer.dir();
-                    break;
-                case"md","mkdir":
-                    explorer.mkdir(array[1].replace(" ", ""));
-                    break;
-                case "rename":
-                    explorer.rename()
-                    break;
-                case "rmdir":
-                    break;
+    public static void main(String[] args) throws IOException {
+        System.out.println("starting path");
+        explorer = new Explorer(reader.readLine());
+        create_explorer();
+        while (true) {
+            try {
+                System.out.println();
+                String[] array = reader.readLine().split(" ");
+                switch (array[0]) {
+                    case "cd", "chdir":
+                        explorer.cd(array[1].replace(" ", ""));
+                        break;
+                    case "dir":
+                        if(array[1].contains("/")){
+                            explorer.sort(array[1]);
+                            break;
+                        }
+                        explorer.dir();
+                        break;
+                    case "md", "mkdir":
+                        explorer.mkdir(array[1].replace(" ", ""));
+                        break;
+                    case "rename":
+                        if (!explorer.rename(array[1].replace(" ", ""), array[2].replace(" ", ""))) {
+                            System.out.println("no file found");
+                        }
+                        break;
+                    case "rmdir":
+                        explorer.rmdir(array[1].replace(" ", ""));
+                        break;
+
+
+                }
+
+            } catch (Exception e) {
+                System.out.println("wrong expression");
             }
+            System.out.println();
             System.out.println(explorer.getPath());
+
+        }
+    }
+
+    public static Explorer create_explorer() throws IOException {
+        while (true) {
+            try {
+                if (explorer.exists()) {
+                    System.out.println();
+                    System.out.println(explorer.getPath());
+                    return explorer;
+                }else {
+                    System.out.println("path doesn't exist, insert a new one");
+                    explorer = new Explorer(reader.readLine());
+                }
+            } catch (NullPointerException e) {
+                System.out.println("path doesn't exist, insert a new one");
+                explorer = new Explorer(reader.readLine());
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 package Main;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -38,7 +39,10 @@ public class Main {
                     case "rmdir":
                         explorer.rmdir(array[1].replace(" ", ""));
                         break;
+                    case "tree":
 
+                        explorer.tree(new File(explorer.getPath()),0);
+                        break;
 
                 }
 

@@ -18,6 +18,9 @@ public class Main {
                 System.out.println();
                 String[] array = reader.readLine().split(" ");
                 switch (array[0]) {
+                    case "cd..":
+                            explorer.cdpunto();
+                        break;
                     case "cd", "chdir":
                         explorer.cd(array[1].replace(" ", ""));
                         break;
@@ -40,14 +43,13 @@ public class Main {
                         explorer.rmdir(array[1].replace(" ", ""));
                         break;
                     case "tree":
-
                         explorer.tree(new File(explorer.getPath()),0);
                         break;
 
                 }
 
             } catch (Exception e) {
-                System.out.println("wrong expression");
+                System.out.println("wrong expression"+e);
             }
             System.out.println();
             System.out.println(explorer.getPath());

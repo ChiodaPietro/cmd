@@ -1,6 +1,7 @@
 package Main;
 
 import java.io.File;
+import java.util.regex.Pattern;
 
 public class Explorer {
     private String path;
@@ -8,6 +9,17 @@ public class Explorer {
 
     public Explorer(String starting_path) {
         path = starting_path;
+    }
+    public void cdpunto(){
+        String[] array=path.split(Pattern.quote("\\"));
+        file_or_directory=new File(path.replace("\\"+array[array.length-1],"" ));
+        if (file_or_directory.exists()){
+            path=path.replace("\\"+array[array.length-1],"" );
+
+        }else {
+            file_or_directory=new File(path);
+        }
+
     }
 
     public void cd(String path) {

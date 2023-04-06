@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="18d3aef7-475f-4067-ba0a-433eb4365aaf" name="Changes" comment="finished all the sorting methods">
+    <list default="true" id="18d3aef7-475f-4067-ba0a-433eb4365aaf" name="Changes" comment="i did it but at what cost?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Explorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Explorer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
@@ -72,7 +75,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1680706667053</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="i did it but at what cost?">
+      <created>1680710230073</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1680710230073</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,15 +97,35 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finished all the sorting methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished all the sorting methods" />
+    <MESSAGE value="i did it but at what cost?" />
+    <option name="LAST_COMMIT_MESSAGE" value="i did it but at what cost?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main/Explorer.java</url>
+          <line>12</line>
+          <properties class="Main.Explorer" method="cdpunto">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Explorer.java</url>
-          <line>169</line>
-          <option name="timeStamp" value="7" />
+          <line>14</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Explorer.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Explorer.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

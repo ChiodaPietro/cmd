@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18d3aef7-475f-4067-ba0a-433eb4365aaf" name="Changes" comment="i did it but at what cost?">
+    <list default="true" id="18d3aef7-475f-4067-ba0a-433eb4365aaf" name="Changes" comment="i added the cd.. method, now we are officialy done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Explorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Explorer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,13 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1680710230073</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="i added the cd.. method, now we are officialy done">
+      <created>1680770289552</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1680770289552</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,34 +103,45 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finished all the sorting methods" />
     <MESSAGE value="i did it but at what cost?" />
-    <option name="LAST_COMMIT_MESSAGE" value="i did it but at what cost?" />
+    <MESSAGE value="i added the cd.. method, now we are officialy done" />
+    <option name="LAST_COMMIT_MESSAGE" value="i added the cd.. method, now we are officialy done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Main/Explorer.java</url>
-          <line>12</line>
-          <properties class="Main.Explorer" method="cdpunto">
+          <line>169</line>
+          <properties class="Main.Explorer" method="tree">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Explorer.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="14" />
+          <line>170</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Explorer.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="15" />
+          <line>172</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Explorer.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="16" />
+          <line>177</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Explorer.java</url>
+          <line>181</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Explorer.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

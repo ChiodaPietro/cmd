@@ -174,10 +174,10 @@ public class Explorer {
 
         String spacing = "";
         for (int i = 0; i < directory_level; i++) {
-            spacing += "|   ";
+            spacing += "----";
         }
 
-        spacing += "|-- ";
+        spacing += "--- ";
         System.out.println(spacing + directory.getName());
         File[] files = directory.listFiles();
         for (File file : files) {
